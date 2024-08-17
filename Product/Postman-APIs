@@ -1,0 +1,54 @@
+
+
+//for inserting data
+
+method : Post : localhost:8080/products/add
+
+	Body -> Raw -> json
+	
+			{
+    "name": "HP",
+    "category": "Laptop",
+    "description": "A high-performance laptop from Dell",
+    "price": 14000,
+    "quantity": 10,
+    "status": "Available"
+}
+			
+			----------------
+			
+method : Put : localhost:8080/products/update
+
+	Body -> Raw -> json
+	
+			{
+    "productId": "DELL1718",
+    "name": "Dell",
+    "category": "Laptop",
+    "description": "A high-performance laptop from Dell solutions.",
+    "price": 12000,
+    "quantity": 10,
+    "status": "Available"
+}
+
+
+
+			---------------------
+			
+method : Get : localhost:8080/products/getDetails
+
+	Body -> Raw -> json
+	
+			{
+    "pageNum" : 1,
+    "name" :"del",
+    "category" :"laptop"
+}
+
+		-----------------
+		
+		
+		method : Get : localhost:8080/products/getDetailsById/HP6625
+
+			
+			
