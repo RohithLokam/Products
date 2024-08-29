@@ -8,7 +8,7 @@
 Before running the application, you need to update the database configuration in the `application.properties` file.
 
 1. Open `src/main/resources/application.properties`.
-
+ 
 2. Update the following properties to match your local MySQL database setup:
 
    ```properties
